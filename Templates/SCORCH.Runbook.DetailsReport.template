@@ -1,0 +1,36 @@
+<html>
+ <head>
+    <title>%_RUNBOOK_% - Step: %_ACTIVITY_% - Details Report</title>
+	<style>
+		%_PLACEHOLDER_LAYOUT_CSS_%
+	</style>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		%_PLACEHOLDER_JQUERY_JAVASCRIPT_%
+	</script>
+	<script type="text/javascript">
+	$(function() {
+		$('.map').maphilight({
+			alwaysOn: 'true'
+		});		
+	});
+	</script>
+	<script type='text/javascript'>
+	$(window).load(function(){
+		$(document).ready(function () {
+			$('.ExDataDescription').hide();
+			$('#SelectItem').show();
+			$('#ExecutionDataList').change(function () {
+				$('.ExDataDescription').hide();
+				$('#'+$(this).val()).show();
+			});
+		});
+	});
+	</script>
+ </head>
+  <body style="align:left;">
+	<div>
+%_PLACEHOLDER_ACTIVITY_INFORMATION_%
+	</div>
+  </body>
+</html>

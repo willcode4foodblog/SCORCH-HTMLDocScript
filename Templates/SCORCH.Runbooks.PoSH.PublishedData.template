@@ -1,0 +1,6 @@
+	<tr>
+		<td class="publisheddata">%_ISCOLLECTION_%</td>
+		<td class="publisheddata">%_POWERSHELL_VAR_%</td>
+		<td class="publisheddata">%_VARTYPE_%</td>
+		<td class="publisheddata">%_PUBLISHED_VAR_%</td>
+	</tr>

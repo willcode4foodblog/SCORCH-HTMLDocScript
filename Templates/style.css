@@ -1,0 +1,562 @@
+﻿body {
+			background-color:white;
+			font-family:"Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+			font-size: 13px;
+			
+			
+		}
+		table td, table th {
+			white-space: -moz-pre-wrap;  /* Firefox 1.0-2.0 */
+			white-space: -pre-wrap;      /* Opera 4-6 */
+			white-space: -o-pre-wrap;    /* Opera 7 */
+			white-space: pre-wrap;       /* CSS3 */
+		}		
+		p {color:black;}
+		
+		
+		#activitydetails
+		{
+			border: 1px solid black;
+			width:75%;
+			left:0;
+			top:0;
+			/*border-spacing: 0;
+			border-collapse: collapse;*/
+		}
+		#activitydetails tr 
+		{
+			font-size: 1.0em;
+			text-align:left;
+			padding-left: 10px;
+			padding-top:5px;
+			padding-bottom:4px;
+			background-color:#500000;
+			border: 1px solid black;
+			color:#000000;
+		}
+		#activitydetails th 
+		{
+			font-size:.8em;
+			text-align:left;
+			margin-top: 10px;
+			padding-top:5px;
+			padding-bottom:4px;
+			padding-left:10px;
+			background: #010757; /* Old browsers */
+			/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzg5MDIwYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ0JSIgc3RvcC1jb2xvcj0iIzhmMDIyMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhODAwMTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+			background: -moz-linear-gradient(top,  #010757 0%, #8f0222 44%, #a80013 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#010757), color-stop(44%,#8f0222), color-stop(100%,#a80013)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #010757 0%,#8f0222 44%,#a80013 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #010757 0%,#8f0222 44%,#a80013 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #010757 0%,#8f0222 44%,#a80013 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #010757 0%,#8f0222 44%,#a80013 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#010757', endColorstr='#a80013',GradientType=0 ); /* IE6-8 */
+			color:#ffffff;
+		}
+		
+		#activitydetails th.Navigation
+		{
+			text-align:right;
+			padding-right: 5px;
+			display:block;
+		}
+		#activitydetails th.Navigation a
+		{
+			color:#FFFFFF;
+			font-weight:normal;
+			font-size: 12;
+		}
+		#activitydetails th.ActivityHeader {
+			background-color:#FFFFFF;
+			line-height: 30px;
+			font-size: 1.5em;
+			font-weight:normal;
+			color:#FFFFFF;
+		}
+		
+		/* unvisited link */
+		#activitydetails th.Navigation a:link {
+			color: #FFFFFF;
+			font-weight:bold;
+			font-style:none;
+			display:block;
+		}
+
+		/* visited link */
+		#activitydetails th.Navigation a:visited {
+			color: #FFFFFF;
+			font-weight:bold;
+			font-style:normal;
+			display:block;
+		}
+
+		/* mouse over link */
+		#activitydetails th.Navigation a:hover {
+			color: #FFFFFF;
+			font-weight:normal;
+			font-style:normal;
+			display:block;
+		}
+
+		/* selected link */
+		#activitydetails th.Navigation a:active {
+			color: #0000FF;
+			display:block;
+		}		
+		
+		#activitydetails td.alt 
+		{
+			color:#606060;
+			background-color: #E0E0E0 ;
+			font-weight:bold;
+			font-size:12;
+			padding:5px;
+			width:280px;
+		}
+		#activitydetails td.scriptbody 
+		{
+			color:#000000;
+			background-color: #E0E0E0 ;
+			font-weight:normal;
+			font-size: 12;
+			word-wrap: break-word;       /* Internet Explorer 5.5+, Chrome, Firefox 3+ */
+			overflow-wrap: break-word;   /* CSS3 standard: Chrome & Opera 2013+ */
+			
+		}
+		#activitydetails td.activityname
+		{
+			color:#000000;
+			background-color: #E0E0E0 ;
+			font-weight:bold;
+			font-size: 14;
+		}
+		#activitydetails td.publisheddata 
+		{
+			color:#000000;
+			background-color: #E0E0E0 ;
+			font-weight:normal;
+			font-size: 12;
+		}
+		#activitydetails span.PowerShellComment 
+		{
+			color:#009900;
+			background-color: #E0E0E0 ;
+			font-weight:normal;
+			font-size: 14;
+		}	
+		#activitydetails span.LinkActivityName
+		{
+			color:#484848;
+			font-weight:strong;
+			font-size: 12;
+		}	
+		#activitydetails span.LinkActivitySubtext
+		{
+			color:#484848;
+			font-weight:normal;
+			font-size: 11;
+		}			
+		#activitydetails td
+		{
+			color:#000000;
+			background-color: #FFFFFF ;
+			font-size:12;
+			/*font-family:Arial,sans-serif;*/
+		}			
+		
+/*** CSS MENU ***/
+		
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+#cssmenu {
+  z-index:1000;
+  margin: 0;
+  margin-right:10px;
+  padding: 0;
+  margin-top:5px;
+  float:right;
+  line-height: 1;
+  display: block;
+  position: relative;
+  width:auto;
+
+}
+#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+#cssmenu ul:after,
+#cssmenu:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#cssmenu ul li {
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+   border: 1px solid #000000;
+}
+#cssmenu ul li a {
+  text-decoration: none;
+  display: block;
+  padding:0;
+  margin: 0;
+  -webkit-transition: color .2s ease;
+  -moz-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu ul li ul {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+}
+#cssmenu ul li ul li {
+  max-height: 0;
+  position: absolute;
+  -webkit-transition: max-height 0.4s ease-out;
+  -moz-transition: max-height 0.4s ease-out;
+  -ms-transition: max-height 0.4s ease-out;
+  -o-transition: max-height 0.4s ease-out;
+  transition: max-height 0.4s ease-out;
+  background: #680000;
+  color:#FFFFFF;
+}
+#cssmenu ul li ul li.has-sub:after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background: #000000;
+  z-index: 1;
+  top: 13px;
+  right: 15px;
+}
+#cssmenu.align-right ul li ul li.has-sub:after {
+  right: auto;
+  left: 15px;
+}
+#cssmenu ul li ul li.has-sub:before {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  border: 3px solid transparent;
+  border-left-color: #ffffff;
+  z-index: 2;
+  top: 15px;
+  right: 15px;
+}
+#cssmenu.align-right ul li ul li.has-sub:before {
+  right: auto;
+  left: 15px;
+  border-left-color: transparent;
+  border-right-color: #ffffff;
+}
+#cssmenu ul li ul li a {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: none;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  display: block;
+  width:300px;
+  padding: 11px 10px 11px 20px;
+}
+#cssmenu ul li ul li:hover > a,
+#cssmenu ul li ul li.active > a {
+  color: #FFFF00;
+}
+#cssmenu ul li ul li:hover:after,
+#cssmenu ul li ul li.active:after {
+  background: #FFFF00;
+}
+#cssmenu ul li ul li:hover > ul {
+  left: 100%;
+  top: 0;
+}
+#cssmenu ul li ul li:hover > ul > li {
+  max-height: 52px;
+  position: relative;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu.align-center > ul > li {
+  float: none;
+  display: inline-block;
+}
+#cssmenu.align-center > ul {
+  text-align: center;
+}
+#cssmenu.align-center ul ul {
+  text-align: left;
+}
+#cssmenu.align-right > ul {
+  float: right;
+}
+#cssmenu.align-right > ul > li:hover > ul {
+  left: auto;
+  right: 0;
+}
+#cssmenu.align-right ul ul li:hover > ul {
+  right: 100%;
+  left: auto;
+}
+#cssmenu.align-right ul ul li a {
+  text-align: right;
+}
+#cssmenu > ul > li:after {
+  /*content: "Back To Runbook Map";*/
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  z-index: 0;
+  background: #000000;
+  -webkit-transition: height .2s;
+  -moz-transition: height .2s;
+  -ms-transition: height .2s;
+  -o-transition: height .2s;
+  transition: height .2s;
+}
+#cssmenu > ul > li.has-sub > a {
+  padding-right: 40px;
+}
+#cssmenu > ul > li.has-sub > a:after {
+  display: block;
+  content: "";
+  background: #ffffff;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  border-radius: 13px;
+  right: 14px;
+  top: 16px;
+}
+#cssmenu > ul > li.has-sub > a:before {
+  display: block;
+  content: "";
+  border: 4px solid transparent;
+  border-top-color: #4cb6ea;
+  z-index: 2;
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: 16px;
+  top: 21px;
+}
+#cssmenu > ul > li > a {
+  color: #ffffff;
+  padding: 15px 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  z-index: 2;
+  position: relative;
+}
+#cssmenu > ul > li:hover:after,
+#cssmenu > ul > li.active:after {
+  height: 100%;
+}
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li.active > a {
+  color: #FFFFFF;
+  background-color:#860000;
+}
+#cssmenu > ul > li:hover > a:after,
+#cssmenu > ul > li.active > a:after {
+  background: #000000;
+}
+#cssmenu > ul > li:hover > a:before,
+#cssmenu > ul > li.active > a:before {
+  border-top-color: #ffffff;
+}
+#cssmenu > ul > li:hover > ul {
+  left: 0;
+}
+#cssmenu > ul > li:hover > ul > li {
+  max-height: 72px;
+  position: relative;
+}
+#cssmenu #menu-button {
+  display: none;
+}
+#cssmenu > ul > li > a {
+  display: block;
+  max-height:50px;
+}
+#cssmenu > ul > li {
+  width: auto;
+}
+#cssmenu > ul > li > ul {
+  width: 300px;
+  display: block;
+}
+#cssmenu > ul > li > ul > li {
+  width: 300px;
+  display: block;
+}
+@media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+  #cssmenu > ul {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.35s ease-out;
+    -moz-transition: max-height 0.35s ease-out;
+    -ms-transition: max-height 0.35s ease-out;
+    -o-transition: max-height 0.35s ease-out;
+    transition: max-height 0.35s ease-out;
+  }
+  #cssmenu > ul > li > ul {
+    width: 100%;
+    display: block;
+  }
+  #cssmenu.align-right ul li a {
+    text-align: left;
+  }
+  #cssmenu > ul > li > ul > li {
+    width: 100%;
+    display: block;
+  }
+  #cssmenu.align-right ul ul li a {
+    text-align: left;
+  }
+  #cssmenu > ul > li > ul > li > a {
+    width: 100%;
+    display: block;
+  }
+  #cssmenu ul li ul li a {
+    width: 100%;
+  }
+  #cssmenu.align-center > ul {
+    text-align: left;
+  }
+  #cssmenu.align-center > ul > li {
+    display: block;
+  }
+  #cssmenu > ul.open {
+    max-height: 1000px;
+    border-top: 1px solid rgba(110, 110, 110, 0.25);
+  }
+  #cssmenu ul {
+    width: 100%;
+  }
+  #cssmenu ul > li {
+    float: none;
+    width: 100%;
+  }
+  #cssmenu ul li a {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 20px;
+  }
+  #cssmenu ul > li:after {
+    display: none;
+  }
+  #cssmenu ul li.has-sub > a:after,
+  #cssmenu ul li.has-sub > a:before,
+  #cssmenu ul li ul li.has-sub:after,
+  #cssmenu ul li ul li.has-sub:before {
+    display: none;
+  }
+  #cssmenu ul li ul,
+  #cssmenu ul li ul li ul,
+  #cssmenu ul li ul li:hover > ul,
+  #cssmenu.align-right ul li ul,
+  #cssmenu.align-right ul li ul li ul,
+  #cssmenu.align-right ul li ul li:hover > ul {
+    left: 0;
+    position: relative;
+    right: auto;
+  }
+  #cssmenu ul li ul li,
+  #cssmenu ul li:hover > ul > li {
+    max-height: 999px;
+    position: relative;
+    background: none;
+  }
+  #cssmenu ul li ul li a {
+    padding: 8px 20px 8px 35px;
+    color: #ffffff;
+  }
+  #cssmenu ul li ul ul li a {
+    padding: 8px 20px 8px 50px;
+  }
+  #cssmenu ul li ul li:hover > a {
+    color: #000000;
+  }
+  #cssmenu #menu-button {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  #cssmenu #menu-button:after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    right: 20px;
+    top: 16px;
+  }
+  #cssmenu #menu-button:before {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid #ffffff;
+    right: 20px;
+    top: 26px;
+  }
+		
+/*** END CSS MENU ***/
+
+/*** START EXECUTION DATA DROP DOWN STYLES ***/
+
+div.ExDataDescription {
+        display:block;
+        padding: 15px;
+        border: 1px solid #ddd;
+        background: #eee;
+        width: 220px;
+        height: 30px;
+        margin: 5px;
+    }
+    
+#ExecutionDataList {
+    border: 1px solid #ddd;
+    width: 200px;
+}
+
+
+/*** END EXECUTION DATA DROP DOWN STYLES ***/

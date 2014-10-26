@@ -1,0 +1,80 @@
+ <table id="activitydetails" align="left">
+<tr><th class="alt" style="font-color:white;font-size:8px;width:300px;text-align:center;"><img src="data:image/gif;base64,%_SRC_IMG_COMPANYLOGO_%" alt="company_logo"><br>Document Generated on:<br> %_TODAYS_DATE_%</th>
+<th style="text-align:left;position:relative;">
+ <span style="font-size:1.5em;font-weight:normal;">%_RUNBOOK_% - %_ACTIVITY_%</span></th></tr>
+ <tr><th style="background-color:#700000;line-height:24px;">Activity Information</th><th style="background-color:#700000;">%_PLACEHOLDER_CSS_LINK_MENU_%</th></tr>
+ <tr><th colspan=2 style="background-color:#700000;line-height:24px;" colspan="2">Activity Information</th></tr>
+		<tr>
+		  <th>Information Type</th>
+		  <th>Information</th>
+		</tr>
+		<tr>
+			<td class="alt">Activity Name</td>
+			<td class="activityname" style="text-align:center;"><img src="data:image/gif;base64,%_ICON_ACTIVITY_%" alt="%_ACTIVITY_%"></BR><span class="LinkActivityName">%_ACTIVITY_%</span></td>
+		</tr>
+		<tr>
+			<div style="display:none;">
+				<map name="runbookcoords">
+					%_PLACEHOLDER_ACTIVITY_COORDS_%
+				</map>
+			</div>
+			<div>
+				<td class="alt">Reference Image for Runbook: %_RUNBOOK_%</td>
+				<td><img src="data:image/gif;base64,%_PLACEHOLDER_RUNBOOK_IMAGE_%" alt="Embedded Runbook Image" border="1" class="map" usemap="#runbookcoords"></td>
+			</div>
+		</tr>
+		<tr>
+			<td class="alt">Description</td>
+			<td>%_DESCRIPTION_%</td>
+		</tr>
+		<tr><td class="alt">UniqueID</td><td>%_UNIQUEID_%</td></tr>
+		<tr>
+			<td class="alt">ObjectTypeName</td>
+			<td>%_OBJECTTYPENAME_%</td>
+		</tr>
+		<tr>
+			<td class="alt">Query</td>
+			<td class="scriptbody">%_QUERY_%</td>
+		</tr>		
+		<tr>
+			<td class="alt">Flatten</td>
+			<td>%_FLATTEN_%</td>
+		</tr>
+		<tr>
+			<td class="alt">FlatUseLineBreak</td>
+			<td>%_FLAT_USE_LINE_BREAK_%</td>
+		</tr>
+		<tr>
+			<td class="alt">FlatUseCustomSep</td>
+			<td>%_FLAT_USE_CUSTOM_SEP_%</td>
+		</tr>
+		<tr>
+			<td class="alt">FlatCustomSep</td>
+			<td>%_FLAT_CUSTOM_SEP_%</td>
+		</tr>
+		<tr>
+			<td class="alt">Server</td>
+			<td>%_SERVER_%</td>
+		</tr>
+		<tr>
+			<td class="alt">DatabaseType</td>
+			<td>%_DATABASE_TYPE_%</td>
+		</tr>
+		<tr>
+			<td class="alt">InitialCatalog</td>
+			<td>%_INITIAL_CATALOG_%</td>
+		</tr>
+		<tr>
+			<td class="alt">DatabaseAuthentication</td>
+			<td>%_DB_AUTHENTICATION_%</td>
+		</tr>
+		<tr>
+		<td class="alt">UserName</td>
+			<td>%_USERNAME_%</td>
+		</tr>
+		<tr>
+			<td class="alt">ConnectionTimeout</td>
+			<td>%_CONNECTION_TIMEOUT_%</td>
+		</tr>
+  </table> 
+  	</div>

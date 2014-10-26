@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+		body {
+			background-color:white;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: .7em;
+		}
+		table td, table th {
+			white-space: -moz-pre-wrap;  /* Firefox 1.0-2.0 */
+			white-space: -pre-wrap;      /* Opera 4-6 */
+			white-space: -o-pre-wrap;    /* Opera 7 */
+			white-space: pre-wrap;       /* CSS3 */
+		}		
+		p {color:black;}
+		
+		
+		/* Test CSS for HoverMap of Activity List	*/
+		
+		#toc
+		{
+			border: 1px solid black;
+			width:55%;
+		}
+		#toc tr 
+		{
+			font-size: 1.0em;
+			text-align:left;
+			padding-top:5px;
+			padding-bottom:4px;
+			background-color:#500000;
+			color:#000000;
+		}
+		#toc th 
+		{
+			font-size:.9em;
+			text-align:left;
+			padding-top:5px;
+			padding-bottom:4px;
+			background: #60010b; /* Old browsers */
+			/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzYwMDEwYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ0JSIgc3RvcC1jb2xvcj0iIzhmMDIyMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjNDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+			background: -moz-linear-gradient(top,  #60010b 0%, #8f0222 44%, #c40000 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#60010b), color-stop(44%,#8f0222), color-stop(100%,#c40000)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #60010b 0%,#8f0222 44%,#c40000 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #60010b 0%,#8f0222 44%,#c40000 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #60010b 0%,#8f0222 44%,#c40000 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #60010b 0%,#8f0222 44%,#c40000 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60010b', endColorstr='#c40000',GradientType=0 ); /* IE6-8 */
+			color:#ffffff;
+		}
+		#toc td
+		{
+			text-align:left;
+			margin-right: left;
+			background-color:white;
+			/*border: 1px solid black*/;
+		}
+		#toc td.runbookImage 
+		{
+			position: relative;
+			background-color: #FFFFFF;
+			font-weight:bold;
+			font-size:14;
+			padding-bottom:5px;
+			align:center;
+			text-align:center;
+		}
+		#toc td.runbookImage .gif
+		{
+			position:absolute;
+			left:50%;
+			top:50%;
+		}
+		#toc td.alt 
+		{
+			color:#606060;
+			text-align:center;
+			background-color: #E0E0E0 ;
+			font-weight:bold;
+			font-size:14;
+			col-width:150px;
+			padding-bottom:5px;
+		}
+		#toc td.alt:hover 
+		{
+			color:#606060;
+			background-color: #FF6262;
+			font-weight:bold;
+			font-size:14;
+			col-width:150px;
+			padding-bottom:5px;
+		}
+		#toc td.alt a
+		{
+			color:#606060;
+			font-weight:bold;
+			font-size:14;
+			col-width:150px;
+			padding:10px;
+		}
+		#toc td.alt2
+		{
+			background-color:white;
+			padding-top:10px;
+			font-size:12;
+			font-weight:bold;
+			font-color:black;
+		}
+		@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+		@charset "UTF-8";
+		/* Base Styles */
+		#cssmenuToC,
+		#cssmenuToC ul,
+		#cssmenuToC li,
+		#cssmenuToC a {
+		  margin: 0;
+		  padding: 0;
+		  border: 0;
+		  list-style: none;
+		  font-weight: normal;
+		  text-decoration: none;
+		  line-height: 1;
+		  font-family: 'Open Sans', sans-serif;
+		  font-size: 12px;
+		  position: relative;
+		}
+		#cssmenuToC a {
+		  line-height: 1.3;
+		}
+		#cssmenuToC {
+		  width: 250px;
+		}
+		#cssmenuToC > ul > li > a {
+		  padding-right: 40px;
+		  font-size: 16px;
+		  font-weight: bold;
+		  display: block;
+		  background: #87001f;
+		  color: #ffffff;
+		  border-bottom: 1px solid #210008;
+		  text-transform: uppercase;
+		}
+		#cssmenuToC > ul > li > a > span {
+		  background: #ba002b;
+		  padding: 5px;
+		  display: block;
+		  font-size: 11px;
+		  font-weight: 300;
+		}
+		#cssmenuToC > ul > li > a:hover {
+		  text-decoration: none;
+		}
+		#cssmenuToC > ul > li.active {
+		  border-bottom: none;
+		}
+		#cssmenuToC > ul > li.active > a {
+		  color: #fff;
+		}
+		#cssmenuToC > ul > li.active > a span {
+		  background: #87001f;
+		}
+		#cssmenuToC span.cnt {
+		  position: absolute;
+		  top: 8px;
+		  right: 13px;
+		  padding: 0;
+		  margin: 0;
+		  background: none;
+		}
+		/* Sub menu */
+		#cssmenuToC ul ul {
+		  display: none;
+		}
+		#cssmenuToC ul ul li {
+		  border: 1px solid #e0e0e0;
+		  border-top: 0;
+		}
+		#cssmenuToC ul ul a {
+		  padding: 10px;
+		  display: block;
+		  color: #900021;
+		  font-size: 11px;
+		}
+		#cssmenuToC ul ul a:hover {
+		  color: #bd0e36;
+		}
+		#cssmenuToC ul ul li.odd {
+		  background: #f4f4f4;
+		}
+		#cssmenuToC ul ul li.even {
+		  background: #fff;
+		}
+</style>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		%_PLACEHOLDER_JQUERY_JAVASCRIPT_%
+	</script>
+	<script type="text/javascript">
+	/* This code enables the fancy table of contents menu */
+	$(document).ready(function(){
+
+	$('#cssmenuToC > ul > li ul').each(function(index, e){
+	  var count = $(e).find('li').length;
+	  var content = '<span class=\"cnt\">' + count + '</span>';
+	  $(e).closest('li').children('a').append(content);
+	});
+	$('#cssmenuToC ul ul li:odd').addClass('odd');
+	$('#cssmenuToC ul ul li:even').addClass('even');
+	$('#cssmenuToC > ul > li > a').click(function() {
+	  $('#cssmenuToC li').removeClass('active');
+	  $(this).closest('li').addClass('active');	
+	  var checkElement = $(this).next();
+	  if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+		$(this).closest('li').removeClass('active');
+		checkElement.slideUp('normal');
+	  }
+	  if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+		$('#cssmenuToC ul ul:visible').slideUp('normal');
+		checkElement.slideDown('normal');
+	  }
+	  if($(this).closest('li').find('ul').children().length == 0) {
+		return true;
+	  } else {
+		return false;	
+	  }		
+	});
+
+	});	
+	/* The code below launches the jquery UI for highlighting activities */
+	$(function() {
+		$('.map').maphilight();		
+	});
+	</script>
+</head>
+<body>
+<table id="toc">
+<tr>
+<th style="font-size:1.4em;text-align:center;font-weight:normal;padding-bottom:10px;"  colspan="2">
+Orchestrator 2012 R2 - Workflow/Activity Map - <b>Runbook: %_RUNBOOK_%</b>
+</th>
+</tr>
+<tr style="vertical-align:top;">
+<td style="text-align:left;padding-top:5px;margin-top:5px;width:350px;vertical-align:top;">
+<div id='cssmenuToC' style="padding-top:0;margin-top:0;margin-left:0;padding-left:0;font-size:0.8em;">
+%_PLACEHOLDER_LEFTMENUHTML_%
+</div>
+</td>
+<td class="runbookImage">
+<div>
+Reference Image of Runbook from Orchestrator Console:<br>
+</div>
+<div style="display:none;">
+<map name="runbookcoords">
+%_PLACEHOLDER_ACTIVITY_COORDS_%
+</map>
+</div>
+<div align="center" style="display:block;padding-top:0;margin-top:0;">
+<img class="map" src="data:image/gif;base64,%_REFERENCE_RUNBOOK_IMAGE_%"  alt="ReferenceImage" usemap="#runbookcoords">
+</div>
+</td>
+</tr>
